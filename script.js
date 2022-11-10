@@ -2,6 +2,10 @@
 window.addEventListener("scroll", function(){
 	const header = document.querySelector("header");
 	header.classList.toggle('sticky', window.scrollY >0);
+	// if(this.window.scrollY>0){
+	// 	header.classList.add('sticky')
+	// }
+	// else header.classList.remove('sticky')
 });
 
 // JS FOR RESPONSIVE NAV BAR MENU
@@ -25,12 +29,12 @@ navigationItems.forEach((navigationItem) => {
 const scrollBtn = document.querySelector(".scrollToTop-btn");
 window.addEventListener("scroll", function() {
 
-	scrollBtn.classList.toggle("active", window.scrollY > 500);
+	scrollBtn.classList.toggle("active", window.scrollY > 100);
 });
 
 // Javascript to scroll up
 scrollBtn.addEventListener("click", () => {
-	document.body.scrollTop = 0;
+	// document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
 })
 // Reaveal website
